@@ -1,1 +1,21 @@
+/ # export VAULT_ADDR='http://0.0.0.0:8200'
+/ # export VAULT_TOKEN=token
+/ # vault status
+
+Key             Value
+---             -----
+Seal Type       shamir
+Initialized     true
+Sealed          false
+Total Shares    1
+Threshold       1
+Version         1.13.3
+Build Date      2023-06-06T18:12:37Z
+Storage Type    inmem
+Cluster Name    vault-cluster-311bf75d
+Cluster ID      a1be84bb-b455-5bd8-33bb-231432717c3f
+HA Enabled      false
+
+/ # vault kv put secret/cred username=username password=password stcok_code=RELIANCE 
+/ # vault kv get secret/cred
 
