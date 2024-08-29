@@ -1,0 +1,298 @@
+{
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "Section"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2013"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2014"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2015"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2016"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2017"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2018"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2019"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2020"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2021"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2022"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2023"
+                    },
+                    {
+                        "type":"string",
+                        "optional": true,
+                        "field": "bonus"
+                    }
+                ],
+                "optional": true,
+                "name": "rel.public.profit_loss_data.Value",
+                "field": "before"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "Section"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2013"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2014"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2015"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2016"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2017"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2018"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2019"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2020"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2021"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2022"
+                    },
+                    {
+                        "type": "double",
+                        "optional": true,
+                        "field": "Mar 2023"
+                    },
+                    {
+                        "type":"string",
+                        "optional": true,
+                        "field": "bonus"
+                    }
+                ],
+                "optional": true,
+                "name": "rel.public.profit_loss_data.Value",
+                "field": "after"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "version"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "connector"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "name"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "ts_ms"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "name": "io.debezium.data.Enum",
+                        "version": 1,
+                        "parameters": {
+                            "allowed": "true,last,false,incremental"
+                        },
+                        "default": "false",
+                        "field": "snapshot"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "db"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "sequence"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "schema"
+                    },
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "table"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "txId"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "lsn"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": true,
+                        "field": "xmin"
+                    }
+                ],
+                "optional": false,
+                "name": "io.debezium.connector.postgresql.Source",
+                "field": "source"
+            },
+            {
+                "type": "string",
+                "optional": false,
+                "field": "op"
+            },
+            {
+                "type": "int64",
+                "optional": true,
+                "field": "ts_ms"
+            },
+            {
+                "type": "struct",
+                "fields": [
+                    {
+                        "type": "string",
+                        "optional": false,
+                        "field": "id"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "total_order"
+                    },
+                    {
+                        "type": "int64",
+                        "optional": false,
+                        "field": "data_collection_order"
+                    }
+                ],
+                "optional": true,
+                "name": "event.block",
+                "version": 1,
+                "field": "transaction"
+            }
+        ],
+        "optional": false,
+        "name": "rel.public.profit_loss_data.Envelope",
+        "version": 1
+    },
+    "payload": {
+        "before": null,
+        "after": {
+            "Section": "OPM %",
+            "Mar 2013": 0.08,
+            "Mar 2014": 0.08,
+            "Mar 2015": 0.1,
+            "Mar 2016": 0.15,
+            "Mar 2017": 0.15,
+            "Mar 2018": 0.16,
+            "Mar 2019": 0.15,
+            "Mar 2020": 0.15,
+            "Mar 2021": 0.17,
+            "Mar 2022": 0.16,
+            "Mar 2023": 0.16
+        },
+        "source": {
+            "version": "2.5.4.Final",
+            "connector": "postgresql",
+            "name": "rel",
+            "ts_ms": 1723782719009,
+            "snapshot": "false",
+            "db": "reliance",
+            "sequence": "[\"24382480\",\"24493408\"]",
+            "schema": "public",
+            "table": "profit_loss_data",
+            "txId": 494,
+            "lsn": 24493408,
+            "xmin": null
+        },
+        "op": "c",
+        "ts_ms": 1723782721140,
+        "transaction": null
+    }
+}
