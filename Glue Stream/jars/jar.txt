@@ -1,1 +1,2 @@
-
+https://www.confluent.io/hub/debezium/debezium-connector-postgresql
+https://www.confluent.io/hub/confluentinc/kafka-connect-jdbc
