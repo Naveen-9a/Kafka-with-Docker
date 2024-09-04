@@ -19,3 +19,17 @@ HA Enabled      false
 / # vault kv put secret/cred username=username password=password stcok_code=RELIANCE 
 / # vault kv get secret/cred
 
+
+
+
+=========================================================================================================================== 
+fly -t tutorial login -c http://localhost:8080 -u test -p test
+
+$ fly -t tutorial set-pipeline -p hello-world -c hello-world.yml
+
+$ fly -t tutorial unpause-pipeline -p hello-world
+
+$ fly -t tutorial trigger-job --job hello-world/hello-world-job --watch
+
+Use Concourse Quick Start for Guidance
+===========================================================================================================================
